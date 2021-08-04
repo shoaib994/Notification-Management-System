@@ -1,0 +1,44 @@
+
+
+.hello{
+    
+    width: 100%;
+  
+    display:grid;
+    place-items:center;
+    
+}
+
+.heading{
+    color:white;
+    font-size:25px;
+    text-transform:uppercase;
+    position:relative;
+     text-align: center;
+}
+.heading::before{
+    content: 'Developed_By_Shoaib_Ahmed..!!';
+    width: 100%;
+    
+    color:#2ed573;
+    position:absolute;
+    
+    top:0;
+    left:0;
+    border-right: 0.4rem solid #2ed573;
+    animation: slide 5s linear infinite;
+    -webkit-animation: slide 5s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
